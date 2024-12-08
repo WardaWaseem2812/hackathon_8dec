@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --primary-color: #23a6f0;
     --secondary-color: #2dc071;
@@ -13,4 +14,21 @@
   .product-page {
     padding: 4rem 10rem;
   }
+=======
+:root {
+    --primary-color: #23a6f0;
+    --secondary-color: #2dc071;
+    --dark-blue-color: #252b42;
+    --gray-color: #737373;
+    --white-color: #ffffff;
+    --small-fontsize: 1.2rem;
+    --medium-fontsize: 1.3rem;
+    --xl-medium-fontsize: 1.5rem;
+    --large-fontsize: 4rem;
+  }
+  
+  .product-page {
+    padding: 4rem 10rem;
+  }
+>>>>>>> 29d8a6d2bc34eb20f3c3daf4e34737e6de57e8e5
   
