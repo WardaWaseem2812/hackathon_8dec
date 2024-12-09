@@ -1,11 +1,10 @@
-import Image from "next/image";
+import Image from "next/image"
 
-export default function BlueHeader() {
+export default function GreenHeader() {
   return (
-    <div className="lg:block hidden w-full h-[58px] bg-[#252B42]">
+    <div className="lg:block hidden w-full h-[58px] bg-[#23856D]">
       <div className="flex justify-between items-center w-full h-full px-[24px]">
-
-        {/* Left: Contact Information */}
+        {/* Left: Contact */}
         <div className="flex gap-[10px]">
           <button className="flex items-center gap-[5px] p-[10px] text-white">
             <Image src="/images/phone.png" alt="phone" width={16} height={16} />
@@ -17,19 +16,19 @@ export default function BlueHeader() {
           </button>
         </div>
 
-        {/* Center: Follow Us and Discounts */}
+        {/* Center: Follow Us and discounts*/}
         <h6 className="font-Montserrat font-semibold text-[14px] text-white">
           Follow Us and get a chance to win 80% off
         </h6>
 
-        {/* Right: Social Icons Information */}
+        {/* Right: Social Icons */}
         <div className="flex gap-[10px] items-center">
           <h6 className="font-Montserrat text-[14px] text-white">Follow Us:</h6>
           <div className="flex gap-[10px]">
             <Image src="/images/insta.png" alt="insta" width={16} height={16} />
-            <Image src="/images/youtube.png" alt="youtube" width={16} height={16} />
-            <Image src="/images/fb.png" alt="facebook" width={16} height={16} />
-            <Image src="/images/twitter.png" alt="twitter" width={16} height={16} />
+            <Image src="/images/youtube.png" alt="yt" width={16} height={16} />
+            <Image src="/images/fb.png" alt="fb" width={16} height={16} />
+            <Image src="/images/twitter.png" alt="twit" width={16} height={16} />
           </div>
         </div>
       </div>

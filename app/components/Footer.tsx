@@ -1,206 +1,100 @@
-<<<<<<< HEAD
-import React from "react";
+import Image from "next/image";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-gray-50 text-gray-700">
-      <div className="container mx-auto px-6 py-10">
-        {/* Top Section */}
-        <div className="flex flex-col md:flex-row md:justify-between md:items-start space-y-6 md:space-y-0">
-          {/* Logo and Social Icons */}
-          <div className="flex flex-col items-center md:items-start">
-            <h2 className="text-2xl font-bold text-gray-800">Bandage</h2>
-            <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-blue-500 hover:text-blue-600">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="#" className="text-blue-400 hover:text-blue-500">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-pink-500 hover:text-pink-600">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
+    <footer className="bg-white absolute top-[5100px] left-[100px]">
+
+      {/* Top Content */}
+      <section className="bg-[#ffffff] py-10">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center">
+          <div className="flex flex-col">
+            <h1 className="text-[#252b42] text-2xl font-bold leading-loose tracking-tight">Bandage</h1>
+          </div>
+          <div className="flex gap-6">
+            <Image src="/images/design-facebook.png" alt="facebook" className="w-6 h-6" width={24} height={24} />
+            <Image src="/images/design-instagram.png" alt="instagram" className="w-6 h-6" width={24} height={24} />
+            <Image src="/images/design-twitter.png" alt="twitter" className="w-6 h-6" width={24} height={24} />
+          </div>
+        </div>
+      </section>
+
+      {/* Border Divider */}
+      <div className="border-t border-[#e6e6e6]" />
+
+      {/* Footer */}
+      <section className="bg-white py-12">
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12">
+          
+          {/* Company Information */}
+          <div>
+            <h2 className="text-[#252b42] text-base font-bold">Company Info</h2>
+            <nav className="flex flex-col gap-2.5 mt-3">
+              <a href="#" className="text-[#727272] text-sm font-bold">About Us</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">Careers</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">We Are Hiring</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">Blog</a>
+            </nav>
           </div>
 
-          {/* Links Section */}
-          <div className="flex flex-wrap justify-center md:justify-start space-x-0 md:space-x-16 space-y-6 md:space-y-0">
-            {/* Column 1 */}
-            <div className="w-1/2 sm:w-auto">
-              <h3 className="font-semibold text-gray-800">Company Info</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">About Us</a></li>
-                <li><a href="#" className="hover:text-blue-500">Carrier</a></li>
-                <li><a href="#" className="hover:text-blue-500">We are hiring</a></li>
-                <li><a href="#" className="hover:text-blue-500">Blog</a></li>
-              </ul>
-            </div>
-            {/* Column 2 */}
-            <div className="w-1/2 sm:w-auto">
-              <h3 className="font-semibold text-gray-800">Legal</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-blue-500">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-blue-500">Cookies</a></li>
-                <li><a href="#" className="hover:text-blue-500">License</a></li>
-              </ul>
-            </div>
-            {/* Column 3 */}
-            <div className="w-1/2 sm:w-auto">
-              <h3 className="font-semibold text-gray-800">Features</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">Business Marketing</a></li>
-                <li><a href="#" className="hover:text-blue-500">User Analytics</a></li>
-                <li><a href="#" className="hover:text-blue-500">Live Chat</a></li>
-                <li><a href="#" className="hover:text-blue-500">Unlimited Support</a></li>
-              </ul>
-            </div>
-            {/* Column 4 */}
-            <div className="w-1/2 sm:w-auto">
-              <h3 className="font-semibold text-gray-800">Resources</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">iOS & Android</a></li>
-                <li><a href="#" className="hover:text-blue-500">Watch a Demo</a></li>
-                <li><a href="#" className="hover:text-blue-500">Customers</a></li>
-                <li><a href="#" className="hover:text-blue-500">API</a></li>
-              </ul>
-            </div>
+          {/* Legal Information */}
+          <div>
+            <h2 className="text-[#252b42] text-base font-bold">Legal</h2>
+            <nav className="flex flex-col gap-2.5 mt-3">
+              <a href="#" className="text-[#727272] text-sm font-bold">Terms of Service</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">Privacy Policy</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">Cookies</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">Refund Policy</a>
+            </nav>
           </div>
 
-          {/* Newsletter Section */}
-          <div className="flex flex-col items-center md:items-start">
-            <h3 className="font-semibold text-gray-800">Get In Touch</h3>
-            <form className="mt-4 w-full sm:w-auto">
-              <div className="flex flex-col sm:flex-row">
+          {/* Features Information */}
+          <div>
+            <h2 className="text-[#252b42] text-base font-bold">Features</h2>
+            <nav className="flex flex-col gap-2.5 mt-3">
+              <a href="#" className="text-[#727272] text-sm font-bold">Business Marketing</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">User Analytics</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">Live Chat</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">Unlimited Support</a>
+            </nav>
+          </div>
+
+          {/* Resources Information */}
+          <div>
+            <h2 className="text-[#252b42] text-base font-bold">Resources</h2>
+            <nav className="flex flex-col gap-2.5 mt-3">
+              <a href="#" className="text-[#727272] text-sm font-bold">iOS & Android</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">Watch a Demo</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">Customers</a>
+              <a href="#" className="text-[#727272] text-sm font-bold">API</a>
+            </nav>
+          </div>
+
+          {/* Subscribe */}
+          <div>
+            <h2 className="text-[#252b42] text-base font-bold">Get In Touch</h2>
+            <div className="mt-3">
+              <div className="relative mb-4">
                 <input
                   type="email"
+                  className="w-full h-12 px-4 border border-[#e6e6e6] rounded-lg bg-[#f8f8f8] text-[#727272] text-sm font-normal"
                   placeholder="Your Email"
-                  className="p-2 w-full border border-gray-300 rounded-t-md sm:rounded-l-md sm:rounded-t-none focus:outline-none focus:ring focus:ring-blue-300"
                 />
-                <button
-                  type="submit"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-b-md sm:rounded-l-none sm:rounded-r-md hover:bg-blue-600"
-                >
+                <button className="absolute right-0 top-0 h-12 px-4 bg-[#23a6f0] text-white text-sm font-normal rounded-r-lg">
                   Subscribe
                 </button>
               </div>
-              <p className="mt-2 text-sm text-gray-500 text-center sm:text-left">
-                Lore imp sum dolor Amit.
-              </p>
-            </form>
+              <p className="text-[#727272] text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
           </div>
         </div>
+      </section>
 
-        {/* Bottom Section */}
-        <div className="mt-10 border-t pt-4 text-center text-sm text-gray-500">
-          Made With Love By Finland All Right Reserved
+      {/* Bottom */}
+      <section className="bg-[#FAFAFA] py-4">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center">
+          <p className="text-[#727272] text-sm font-bold">Made with love by Finland. All rights reserved.</p>
         </div>
-      </div>
+      </section>
     </footer>
   );
-};
-
-=======
-import React from "react";
-
-const Footer = () => {
-  return (
-    <footer className="bg-gray-50 text-gray-700">
-      <div className="container mx-auto px-6 py-10">
-        {/* Top Section */}
-        <div className="flex flex-col md:flex-row md:justify-between md:items-start space-y-6 md:space-y-0">
-          {/* Logo and Social Icons */}
-          <div className="flex flex-col items-center md:items-start">
-            <h2 className="text-2xl font-bold text-gray-800">Bandage</h2>
-            <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-blue-500 hover:text-blue-600">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="#" className="text-blue-400 hover:text-blue-500">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-pink-500 hover:text-pink-600">
-                <i className="fab fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-
-          {/* Links Section */}
-          <div className="flex flex-wrap justify-center md:justify-start space-x-0 md:space-x-16 space-y-6 md:space-y-0">
-            {/* Column 1 */}
-            <div className="w-1/2 sm:w-auto">
-              <h3 className="font-semibold text-gray-800">Company Info</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">About Us</a></li>
-                <li><a href="#" className="hover:text-blue-500">Carrier</a></li>
-                <li><a href="#" className="hover:text-blue-500">We are hiring</a></li>
-                <li><a href="#" className="hover:text-blue-500">Blog</a></li>
-              </ul>
-            </div>
-            {/* Column 2 */}
-            <div className="w-1/2 sm:w-auto">
-              <h3 className="font-semibold text-gray-800">Legal</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-blue-500">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-blue-500">Cookies</a></li>
-                <li><a href="#" className="hover:text-blue-500">License</a></li>
-              </ul>
-            </div>
-            {/* Column 3 */}
-            <div className="w-1/2 sm:w-auto">
-              <h3 className="font-semibold text-gray-800">Features</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">Business Marketing</a></li>
-                <li><a href="#" className="hover:text-blue-500">User Analytics</a></li>
-                <li><a href="#" className="hover:text-blue-500">Live Chat</a></li>
-                <li><a href="#" className="hover:text-blue-500">Unlimited Support</a></li>
-              </ul>
-            </div>
-            {/* Column 4 */}
-            <div className="w-1/2 sm:w-auto">
-              <h3 className="font-semibold text-gray-800">Resources</h3>
-              <ul className="mt-4 space-y-2">
-                <li><a href="#" className="hover:text-blue-500">iOS & Android</a></li>
-                <li><a href="#" className="hover:text-blue-500">Watch a Demo</a></li>
-                <li><a href="#" className="hover:text-blue-500">Customers</a></li>
-                <li><a href="#" className="hover:text-blue-500">API</a></li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Newsletter Section */}
-          <div className="flex flex-col items-center md:items-start">
-            <h3 className="font-semibold text-gray-800">Get In Touch</h3>
-            <form className="mt-4 w-full sm:w-auto">
-              <div className="flex flex-col sm:flex-row">
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="p-2 w-full border border-gray-300 rounded-t-md sm:rounded-l-md sm:rounded-t-none focus:outline-none focus:ring focus:ring-blue-300"
-                />
-                <button
-                  type="submit"
-                  className="bg-blue-500 text-white px-4 py-2 rounded-b-md sm:rounded-l-none sm:rounded-r-md hover:bg-blue-600"
-                >
-                  Subscribe
-                </button>
-              </div>
-              <p className="mt-2 text-sm text-gray-500 text-center sm:text-left">
-                Lore imp sum dolor Amit.
-              </p>
-            </form>
-          </div>
-        </div>
-
-        {/* Bottom Section */}
-        <div className="mt-10 border-t pt-4 text-center text-sm text-gray-500">
-          Made With Love By Finland All Right Reserved
-        </div>
-      </div>
-    </footer>
-  );
-};
-
->>>>>>> 29d8a6d2bc34eb20f3c3daf4e34737e6de57e8e5
-export default Footer;
+}
