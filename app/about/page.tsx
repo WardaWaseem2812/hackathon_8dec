@@ -1,19 +1,5 @@
 import Navbar from "../components/NavBar2";
 import Image from "next/image";
-import girl from "./images/hero-2.png";
-import facebookIcon from "./images/design-facebook.png";
-import instagramIcon from "./images/design-instagram.png";
-import twittericon from "./images/design-twitter.png";
-import user1 from "./images/team-1-user-1.jpg";
-import user2 from "./images/team-1-user-2.jpg";
-import user3 from "./images/team-1-user-3.jpg";
-import cm1 from "./images/fa-brands-1.png";
-import cm2 from "./images/fa-brands-2.png";
-import cm3 from "./images/fa-brands-3.png";
-import cm4 from "./images/fa-brands-4.png";
-import cm5 from "./images/fa-brands-5.png";
-import cm6 from "./images/fa-brands-6.png";
-import girl2 from "./images/unsplash.png"
 
 export default function About() {
   return (
@@ -46,7 +32,11 @@ export default function About() {
     </div>
     
       {/* Col 2 */}
-      <Image src={girl} alt="girl" className="absolute lg:block hidden lg:left-[-1px] top-[300px] lg:top-[0px]" />
+      <Image src="/images/hero-2.png" alt="girl" 
+      className="absolute lg:block hidden lg:left-[-1px] top-[300px] lg:top-[0px]" 
+      width = {1440}
+      height = {729}
+      />
           
   </div>
 </div>
@@ -73,9 +63,11 @@ export default function About() {
               <div className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden">
                 <div className="w-full h-[230px] relative">
                   <Image
-                    src={user1}
+                    src="/images/team-1-user-1.jpg"
                     alt="Team Member 1"
                     className="object-cover w-full h-full"
+                    width={316}
+                    height={231}
                   />
                 </div>
                 <div className="p-6 text-center">
@@ -87,20 +79,19 @@ export default function About() {
                   {/* Social Media Information*/}
                   <div className="flex justify-center gap-4 mt-4">
                     <Image
-                      src={facebookIcon}
+                      src="/images/design-facebook.png"
                       alt="Facebook"
-                      className="w-6 h-6"
-                    />
+                      width={24} height={24}
+                                          />
                     <Image
-                      src={instagramIcon}
+                      src="/images/design-instagram.png"
                       alt="Instagram"
-                      className="w-6 h-6"
-                    />
+                      width={24} height={24}
+                                          />
                     <Image
-                      src={twittericon}
+                      src="/images/design-twitter.png"
                       alt="Twitter"
-                      className="w-6 h-6"
-                    />
+                      width={24} height={24}                    />
                   </div>
                 </div>
               </div>
@@ -109,9 +100,11 @@ export default function About() {
               <div className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden">
                 <div className="w-full h-[230px] relative">
                   <Image
-                    src={user2}
+                    src="/images/team-1-user-2.jpg"
                     alt="Team Member 2"
                     className="object-cover w-full h-full"
+                    width={329}
+                    height={231}
                   />
                 </div>
                 <div className="p-6 text-center">
@@ -123,20 +116,20 @@ export default function About() {
                   </h6>
                   <div className="flex justify-center gap-4 mt-4">
                     <Image
-                      src={facebookIcon}
+                      src="/images/design-facebook.png"
                       alt="Facebook"
-                      className="w-6 h-6"
-                    />
+                      width={24} height={24}
+                                          />
                     <Image
-                      src={instagramIcon}
+                      src="/images/design-instagram.png"
                       alt="Instagram"
-                      className="w-6 h-6"
-                    />
+                      width={24} height={24}
+                                          />
                     <Image
-                      src={twittericon}
+                      src="/images/design-twitter.png"
                       alt="Twitter"
-                      className="w-6 h-6"
-                    />
+                      width={24} height={24}
+                                          />
                   </div>
                 </div>
               </div>
@@ -145,9 +138,11 @@ export default function About() {
               <div className="flex flex-col items-center bg-white shadow-lg rounded-lg overflow-hidden">
                 <div className="w-full h-[230px] relative">
                   <Image
-                    src={user3}
+                    src="/images/team-1-user-3.jpg"
                     alt="Team Member 3"
                     className="object-cover w-full h-full"
+                    width={329}
+                    height={231}
                   />
                 </div>
                 <div className="p-6 text-center">
@@ -159,20 +154,21 @@ export default function About() {
                   </h6>
                   <div className="flex justify-center gap-4 mt-4">
                     <Image
-                      src={facebookIcon}
+                      src="/images/design-facebook.png"
                       alt="Facebook"
-                      className="w-6 h-6"
+                      width={24}
+                      height={24}
                     />
                     <Image
-                      src={instagramIcon}
+                      src="/images/design-instagram.png"
                       alt="Instagram"
-                      className="w-6 h-6"
-                    />
+                      width={24} height={24}
+                                          />
                     <Image
-                      src={twittericon}
+                      src="/images/design-twitter.png"
                       alt="Twitter"
-                      className="w-6 h-6"
-                    />
+                      width={24} height={24}
+                                          />
                   </div>
                 </div>
               </div>
@@ -197,22 +193,22 @@ export default function About() {
             {/* Logo Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
               <div className="flex justify-center">
-                <Image src={cm1} alt="Client 1 Logo" className="h-12 w-auto" />
+                <Image src="/images/fa-brands-1.png" alt="Client 1 Logo" className="h-12 w-auto" width={103} height={34} />
               </div>
               <div className="flex justify-center">
-                <Image src={cm2} alt="Client 2 Logo" className="h-12 w-auto" />
+                <Image src="/images/fa-brands-2.png" alt="Client 2 Logo" className="h-12 w-auto" width={83} height={58.96} />
               </div>
               <div className="flex justify-center">
-                <Image src={cm3} alt="Client 3 Logo" className="h-12 w-auto" />
+                <Image src="/images/fa-brands-3.png" alt="Client 3 Logo" className="h-12 w-auto" width={102} height={74.84}/>
               </div>
               <div className="flex justify-center">
-                <Image src={cm4} alt="Client 4 Logo" className="h-12 w-auto" />
+                <Image src="/images/fa-brands-4.png" alt="Client 4 Logo" className="h-12 w-auto" width={102.98} height={41.98}/>
               </div>
               <div className="flex justify-center">
-                <Image src={cm5} alt="Client 5 Logo" className="h-12 w-auto" />
+                <Image src="/images/fa-brands-5.png" alt="Client 5 Logo" className="h-12 w-auto" width={104} height={62}/>
               </div>
               <div className="flex justify-center">
-                <Image src={cm6} alt="Client 6 Logo" className="h-12 w-auto" />
+                <Image src="/images/fa-brands-6.png" alt="Client 6 Logo" className="h-12 w-auto" width={75.75} height={7186}/>
               </div>
             </div>
           </div>
@@ -239,16 +235,18 @@ export default function About() {
       {/* Left Side -- Image */}
       <div className="w-[540px] md:w-1/2 h-full relative">
         <Image
-          src={girl2}
+          src="/images/unsplash.png"
           alt="Testimonial Background"
           className="absolute w-[570px] h-[640px] left-[150px] inset-0 object-cover"
+          width={590}
+          height={640}
         />
       </div>
 
     </section>
     
     {/* Footer */}
-    <footer className="bg-white lg:relative lg:top-[1pxpx] lg:left-[1px] absolute left-[100px] top-[3300px]">
+    <footer className="bg-white lg:relative lg:top-[1px] lg:left-[1px] absolute left-[100px] top-[3300px]">
              
              {/* Top  */}
              <section className="bg-[#ffffff] py-10">
@@ -257,9 +255,9 @@ export default function About() {
                         <h1 className="text-[#252b42] text-2xl font-bold leading-loose tracking-tight">Bandage</h1>
                     </div>
                     <div className="flex gap-6">
-                        <Image src={facebookIcon} alt="fb" className="w-6 h-6 " />
-                        <Image src={instagramIcon} alt="fb" className="w-6 h-6 " />
-                        <Image src={twittericon} alt="fb" className="w-6 h-6 " />
+                        <Image src="/images/design-facebook.png" alt="fb" width={24} height={24} />
+                        <Image src="/images/design-instagram.png" alt="fb" className="w-6 h-6 " width={24} height={24}/>
+                        <Image src="/images/design-twitter.png" alt="fb" className="w-6 h-6 " width={24} height={24}/>
                     </div>
                 </div>
             </section>

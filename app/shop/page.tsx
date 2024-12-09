@@ -93,7 +93,7 @@ export default function ShopPage() {
             <div className="flex gap-6">
               <img src="/images/design-facebook.png" alt="fb" className="w-6 h-6 " />
               <img src="/images/design-instagram.png" alt="fb" className="w-6 h-6 " />
-              <img src="/images/design_twitter.png" alt="fb" className="w-6 h-6 " />
+              <img src="/images/design-twitter.png" alt="fb" className="w-6 h-6 " />
             </div>
           </div>
         </section>

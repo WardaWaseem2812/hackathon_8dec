@@ -155,9 +155,11 @@ export default function Pages() {
                 src="/images/heart.png"
                 alt="heart"
                 className="w-6 h-6 cursor-pointer"
+                width={323}
+                height={400}
               />
-              <Image src="/images/cart-black.png" alt="cart" className="w-6 h-6 cursor-pointer" />
-              <Image src="/images/eye.png" alt="eye" className="w-6 h-6 cursor-pointer" />
+              <Image src="/images/cart-black.png" alt="cart" className="w-6 h-6 cursor-pointer" width={15} height={15}/>
+              <Image src="/images/eye.png" alt="eye" className="w-6 h-6 cursor-pointer" width={16} height={16}/>
             </div>
           </div>
         </div>
@@ -177,8 +179,8 @@ export default function Pages() {
         <Image
           src="/images/unsplash-1.png"
           alt="Interior Design"
-          width={323}
-          height={400}
+          width={316}
+          height={372}
           className="object-cover"
         />
       </div>
